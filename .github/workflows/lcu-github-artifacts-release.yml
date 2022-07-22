@@ -13,9 +13,9 @@ env:
   Branches: master
   MainBranch: master
   NPMRegistry: https://registry.npmjs.org/
-  InstallCommand: npm i
-  BuildCommand: npm run build
-  Output: www.pmatt-techhub.com
+  InstallCommand: git
+  BuildCommand: git
+  Output: Basic HTML'-./
 
 jobs:
   build:
