@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+
+        <nav>
+            <!-- header navigation -->
+            <!-- header list items wrapper-->
+            <ul class="main-nav-list">
+                <li class="logo"><a href="">pmatt</a></li>
+                <li class="feature"><a class="feature-link"> Features <i class="fa fa-chevron-down"
+                            aria-hidden="true"></i></a>
+                    <ul class="feature-dropdown-contents">
+                        <li><a href="" title="IDE">IDE</a></li>
+                        <li><a href="" title="Multiplayer">Multiplayer</a></li>
+                        <li><a href="" title="Community">Community</a></li>
+                        <li><a href="" title="Hosting">Hosting</a></li>
+                    </ul>
+                </li>
+                <li><a href="" class="about">Blog</a></li>
+                <li><a href="" class="about">Pricing</a></li>
+                <li><a href="" class="about">Teams pro</a></li>
+                <li><a href="" class="about">Teams for Education</a></li>
+                <li class="career-link"><a href="" class="about">Careers</a></li>
+                <span class="main-nav-top-right-links">
+                    <li><a href="" class="signin">Log in</a></li>
+                    <li><a href="" class="signup">Sign up</a></li>
+                </span>
+            </ul>
+            <span class="hamburgger" onclick="showContent()">&#9776;</span>
+        </nav>
+    </header>
+    <div class="backdrop">
+
+    </div>
+  <div class="contents-wrapper">
+    <div id="form-container">
+        <h3>Log in to your account</h3>
+         <form action="">
+          <input type="text" placeholder="Email or Username" autofocus id="email-username"> <br>
+          <input type="password" placeholder="Password" id="password"> <br>
+          <input type="submit"  id="sub" value="Log in">
+         </form> 
+         <div class="user-assist">
+            <span class="new">New to pmatt? <a href="">Sign up</a></span> <br>
+            <span class="new">Trouble logging in? <a href="">Get help</a></span> <br>
+            <span class="new"> <a href="">Forgot password?</a></span>
+        </div>
+    </div>
+    <div class="signup-with">
+        <a href="" class="continue-with">Continue with google</a>
+        <a href="" class="continue-with">Continue with github</a>
+        <a href="" class="continue-with">Continue with facebook</a>
+       </div> 
+
+  </div>
+  
+    <script src="header.js"></script>
+    <script src="login.js"></script>
+
+</body>
+</html>

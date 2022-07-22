@@ -1,0 +1,241 @@
+@import url("header.css");
+
+.contents-wrapper {
+    position: relative;
+}
+
+#form-container {
+    margin: 8rem auto;
+    background-color: #0E1525;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+form {
+    background-color: #0E1525;
+}
+
+input {
+    width: 25vw;
+    margin: 0.5rem;
+    height: 2.6rem;
+    border-radius: 0.3rem;
+    border: 1px solid #c2c8cc;
+    background-color: #0E1525;
+    caret-color: #c2c8cc;
+    color:white;
+}
+
+input:hover {
+    border: 1px solid #055fb9;
+}
+
+input:focus {
+    outline: 1px solid #055fb9;
+}
+
+input[type="submit"] {
+    color: #c2c8cc;
+    font-size: 0.9rem;
+}
+
+#form-container h3 {
+    font-size: 2rem;
+    color: #c2c8cc;
+    font-weight: 600;
+}
+
+.user-assist {
+    margin-top: 1rem;
+   
+}
+
+hr {
+    color: #c2c8cc;
+    width: 32%;
+}
+.continue-with {
+    display: block;
+    padding: 5px 10px;
+    border: 1px solid #c2c8cc;
+    text-decoration: none;
+    margin: 0.6rem;
+    border-radius: 0.3rem;
+    color: #c2c8cc;
+    width: 25vw;
+}
+
+.continue-with:hover {
+    background-color: #1c2333;
+}
+
+.signup-with {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.new{
+    color: #c2c8cc;
+    line-height: 1.7;
+}
+.new a{
+    text-decoration: none;
+    color:#055fb9;
+}
+.new a:hover{
+    color:rgb(87 171 255);
+}
+.changeCursor{
+cursor: pointer;
+}
+
+@media (max-width:1024px) {
+    input, .continue-with{
+        width: 35vw;
+    }
+}
+
+@media (max-width:780px) {
+    input,.continue-with{
+        width: 45vw;
+    }
+}
+
+@media (max-width:480px) {
+    input {
+        width: 80vw;
+    }
+    .continue-with{
+        width: 80vw;
+    }
+    #form-container h3{
+        font-size: 1.8rem;
+    }
+}
+@media (max-width:200px){
+    .continue-with{
+        padding: 4px 8px;
+        font-size: 0.9rem;
+    }
+    #form-container h3{
+        font-size: 1.6rem;
+    }
+}
+
+/* #form-container {
+    margin: 8rem auto;
+    background-color: blue;
+    width: 22vw;
+    position: relative;
+}
+
+.login-details {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #0E1525;
+    height: 40vh;
+}
+input{
+    width:25vw;
+    margin: 0;
+    height: 2.6rem;
+    border-radius: 0.3rem;
+    border:1px solid #c2c8cc;
+    background-color: #0E1525;
+    caret-color: #c2c8cc;
+    color: #1c2333;
+}
+input:hover{
+    border: 1px solid #055fb9;
+}
+input:focus{
+    outline: 1px solid #055fb9;
+}
+input[type="submit"]{
+  color:#c2c8cc;
+  font-size: 0.9rem;
+}
+#form-container h3{
+    text-align: center;
+    font-size: 1.7rem;
+    color: #c2c8cc;
+}
+.new{
+    font-size: 1rem;
+    display: block;
+    color: #c2c8cc;
+    margin: 0.3rem;
+} 
+.new a{
+    color:#055fb9;
+    text-decoration: none;
+}
+.user-assist{
+    margin-top: 1rem;
+    position: absolute;
+    left: 45%;
+    transform: translateX(-45%);
+}
+hr{
+    color: #c2c8cc;
+    width: 25%;
+    margin-bottom: rem;
+}
+.continue-with{
+    display: block;
+    padding: 5px 10px;
+    border: 1px solid #c2c8cc;
+    text-decoration: none;
+    margin: 0.6rem;
+    border-radius: 0.3rem;
+    color: #c2c8cc;
+    width: 25vw;
+}
+.continue-with:hover{
+    background-color: #1c2333;
+} */
+/* #form-container {
+    margin: 8rem auto;
+    background-color:#0E1525;;
+    width: 30%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+#form-container {
+    text-align: left;
+    color: #c2c8cc;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+input{
+    width:18rem;
+    margin: 0.5rem;
+    height: 2.6rem;
+    border-radius: 0.3rem;
+    border:1px solid #c2c8cc;
+    background-color: #0E1525;
+    caret-color: #c2c8cc;
+    color: #1c2333;
+}
+input:hover{
+    border: 1px solid #055fb9;
+}
+input:focus{
+    outline: 1px solid #055fb9;
+}
+input[type="submit"]{
+  color:#c2c8cc;
+  font-size: 0.9rem;
+}
+.new{
+    font-size: 1rem;
+} */

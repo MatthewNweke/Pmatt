@@ -1,0 +1,373 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+    background-color: #0E1525;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+header {
+    background-color: #0E1525;
+    height: 9vh;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid whitesmoke;
+    z-index: 100;
+}
+
+ul {
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: white;
+    display: block;
+}
+
+.main-nav-list{
+    display: block;
+}
+
+.signup {
+    padding: 0.4rem;
+    background-color: #055fb9;
+    border-radius: 15%;
+    border: 1px solid transparent;
+}
+
+.signup:hover {
+    border: 1px solid #8bc2f8;
+}
+
+li {
+    display: inline-block;
+    margin: 0.7rem;
+}
+
+.main-nav-top-right-links {
+    position: absolute;
+    right: 0;
+    color: black;
+    bottom: 50%;
+    transform: translateY(50%);
+}
+
+.hamburgger {
+    display: none;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    padding: 10px;
+    color: #c2c8cc;
+    /* border: 1px solid #c2c8cc; */
+    /* border-radius: 0.4rem; */
+    margin: 0.5rem;
+}
+
+.feature .feature-link {
+    border: 1px solid transparent;
+    padding: 0.3rem 0.9rem 0.6rem;
+}
+
+.feature .feature-link:hover {
+    border: 1px solid whitesmoke;
+    border-radius: 0.4rem;
+}
+
+.feature:hover .feature-link {
+    border: 1px solid whitesmoke;
+    border-radius: 0.4rem;
+}
+
+.career-link a {
+    text-shadow: 4px 4px 10px #0079f2;
+}
+
+.logo {
+    font-family: cursive;
+}
+
+.logo a {
+    font-weight: 700;
+}
+
+.signin {
+    background-color: #232d44;
+    padding: 0.4rem 0.5rem;
+    border-radius: 15%;
+    border: 1px solid transparent;
+}
+
+.signin:hover {
+    border: 1px solid whitesmoke;
+}
+
+.about:hover {
+    color: #055fb9;
+}
+
+.backdrop {
+    display: none;
+}
+
+.feature {
+    position: relative;
+    padding: 10px;
+}
+
+.feature .feature-link {
+    cursor: pointer;
+}
+
+.feature-dropdown-contents {
+    display: none;
+    position: absolute;
+    top: 3.5rem;
+    left: -3.5%;
+    background-color: #232d44;
+    color: white;
+    padding: 0;
+    border-radius: 0.4rem;
+    z-index: 100;
+}
+
+.feature:hover .feature-dropdown-contents {
+    display: block;
+}
+
+.feature-dropdown-contents a {
+    padding: 0.7rem;
+    display: block;
+    width: 5.5rem;
+    text-align: center;
+    border-radius: 0.4rem;
+    line-height: 1;
+    margin: 0;
+    box-sizing: content-box;
+
+}
+
+.feature-dropdown-contents a:hover {
+    background-color: #055fb9;
+    color: white;
+}
+
+
+@media (max-width:1024px) {
+
+    ul li a {
+        padding: 0;
+    }
+
+    .feature .feature-link {
+        border: 1px solid transparent;
+    }
+
+    .feature .feature-link:hover {
+        border: 1px solid whitesmoke;
+    }
+
+    .backdrop {
+        display: none;
+        padding-bottom: 1rem;
+    }
+}
+
+@media (max-width:780px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .main-nav-list {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 3.7rem;
+        padding-top: 4rem;
+        min-width: 30vw;
+        height: 85vh;
+        background-color: #0E1525;
+        border-radius: 0 0 0.4rem 0.4rem;
+        z-index: 10;
+        box-shadow: 0px 30px 100px rgba(253, 251, 251, 0.15);
+        transition:  5s cubic-bezier(.165, .84, .44, 1);
+    }
+
+    ul li a {
+        margin: 0.85rem;
+        font-size: 0.8rem;
+        display: block;
+        padding: 0.3rem;
+    }
+
+    li {
+        display: block;
+        margin: 0.1rem;
+    }
+
+    .hamburgger {
+        display: inline;
+        padding: 0.8rem;
+        font-size: 1.6rem;
+    }
+
+    .main-nav-top-right-links {
+        position: absolute;
+        top: 0;
+        right: 50%;
+        transform: translateX(50%);
+        padding-top: 5px;
+        height: 17vh;
+    }
+
+    .signup {
+        background-color: #0079f2;
+        padding: 0.75rem 0.85rem;
+        border-radius: 0.3rem;
+        border: 1px solid transparent;
+    }
+
+    .signin {
+        color: rgb(87 171 255);
+        border: 1px solid transparent;
+        border-radius: 0.3rem;
+        padding: 0.8rem 1rem;
+
+    }
+
+    .signin:hover, .signup:hover {
+        background-color: rgb(87 171 255);
+        border: 1px solid whitesmoke;
+        transition: all 0.1s ease-in-out 0.1s;
+    }
+
+    .signin:hover {
+        color: white;
+    }
+
+
+    .feature {
+        position: relative;
+        padding-top: 3rem;
+
+    }
+
+
+
+    .feature-dropdown-contents {
+        position: static;
+        display: block;
+        color: white;
+        margin-bottom: 1px;
+        padding: 0;
+        text-indent: 1rem;
+        background-color: transparent;
+    }
+
+    .feature .feature-link {
+        cursor: auto;
+        font-size: 1rem;
+        color: #abadb1;
+        font-weight: 600;
+        border: none;
+    }
+
+    .feature .feature-link:hover {
+        border: none;
+    }
+
+    .logo {
+        display: none;
+
+    }
+
+    .feature .feature-dropdown-contents li a {
+        margin: 0.3rem;
+        font-size: 0.8rem;
+        display: block;
+        padding: 0.5rem;
+        width: 100%;
+        text-align: left;
+        border-radius: 0;
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 0;
+    }
+
+    .feature .feature-dropdown-contents li a:hover {
+        background-color: transparent;
+    }
+
+    .feature:hover .feature-link {
+        border: none;
+    }
+
+    .backdrop {
+        display: none;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0);
+        z-index: 10;
+        position: fixed;
+        top: 0;
+    }
+
+}
+
+@media (max-width:644px) {
+    .signup {
+        padding: 0.55rem 0.65rem;
+        font-size: 0.73rem;
+    }
+
+    .signin {
+        padding: 0.6rem 0.8rem;
+
+    }
+
+    .feature {
+        padding-top: 5rem;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width:482px) {
+
+    .main-nav-list {
+        height: 90vh;
+    }
+
+    .main-nav-list li a {
+        padding: 0.5rem 0.8rem;
+    }
+
+    .feature a {
+        font-size: 0.8rem;
+    }
+
+    .feature {
+        padding-top: 5rem;
+        margin-bottom: 0;
+    }
+}
