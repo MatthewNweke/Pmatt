@@ -1,6 +1,6 @@
 let getSubmitBtn = document.querySelector("#sub");
 let getUsername = document.querySelector("#email-username");
-let getPassword = document.querySelector("#password");
+let getPassword = document.querySelector(".password1");
 getSubmitBtn.addEventListener("click", (e) => {
     if (getUsername.value === "" || getPassword.value === "") {
         e.preventDefault();

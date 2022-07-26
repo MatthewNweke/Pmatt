@@ -7,18 +7,45 @@
     <title>Document</title>
 </head>
 <style>
-    div {
-        font-size: 6rem;
-        text-align: center;
-        margin: 15rem auto;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-weight: 500;
-    }
-    #G {
-        color: blue;
+body{
+    margin: 0;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10%;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+    header{
+        background-color:red;
+        height: 10vh;
+        display: flex;
+    align-items: center;
+    justify-content: center;
     }
 </style>
 <body>
- <div><span id="G">G</span><span id="firsto">o</span><span id="secO">o</span><span id="g">g</span><span id="l">l</span><span id="e">e</span></div>   
+    <header>
+        <nav>
+            <ul>
+                <li><a href="">services</a></li>
+                <li><a href="">services</a></li>
+                <li><a href="">services</a></li>
+                <li><a href="">services</a></li>
+                <li><a href="">services</a></li>
+                <li><a href="">services</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        let getEachLink=document.querySelectorAll("a");
+        
+        getEachLink.addEventListener("click",()=>{
+            getEachLink.style.color="white";
+        })
+    </script>
 </body>
 </html>
