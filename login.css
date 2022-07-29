@@ -162,6 +162,9 @@ hr {
     #form-container h3 {
         font-size: 1.6rem;
     }
-
+    .fa.fa-google,
+    .fa.fa-facebook, .fa.fa-github {
+        display: none;
+    }
 }
 

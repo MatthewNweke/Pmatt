@@ -39,6 +39,11 @@ input:focus {
 input[type="submit"] {
     color: #c2c8cc;
     font-size: 0.9rem;
+    /* background-color:rgb(2, 55, 109); */
+    background-color: #004182;
+    opacity: 0.5;
+    border: none;
+    /* #02376d */
 }
 
 #form-container h3 {
@@ -46,18 +51,6 @@ input[type="submit"] {
     color: #c2c8cc;
     font-weight: 600;
 }
-
-.user-assist {
-    margin-top: 1rem;
-    width: 25vw;
-    border-bottom: 1px solid #c2c8cc;
-}
-
-hr {
-    color: #c2c8cc;
-    width: 32%;
-}
-
 .continue-with {
     display: block;
     padding: 5px 10px;
@@ -67,32 +60,6 @@ hr {
     border-radius: 0.3rem;
     color: #c2c8cc;
     width: 25vw;
-}
-
-.continue-with:hover {
-    background-color: #1c2333;
-}
-
-.signup-with {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-}
-
-.new {
-    color: #c2c8cc;
-    line-height: 2.2;
-}
-
-.new a {
-    text-decoration: none;
-    color: #055fb9;
-}
-
-.new a:hover {
-    color: rgb(87 171 255);
 }
 
 .changeCursor {
