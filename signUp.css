@@ -50,6 +50,7 @@ input[type="submit"] {
 .user-assist {
     margin-top: 1rem;
     width: 25vw;
+    border-bottom: 1px solid #c2c8cc;
 }
 
 hr {
@@ -99,19 +100,19 @@ hr {
 }
 
 @media (max-width:1024px) {
-    input, .continue-with {
+    input, .continue-with,.user-assist{
         width: 35vw;
     }
 }
 
 @media (max-width:780px) {
-    input, .continue-with {
+    input, .continue-with,.user-assist {
         width: 45vw;
     }
 }
 
 @media (max-width:480px) {
-    input {
+    input,.user-assist {
         width: 80vw;
     }
 
