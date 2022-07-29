@@ -12,9 +12,11 @@ getSubmitBtn.addEventListener("mouseover",()=>{
         getSubmitBtn.style.opacity="1";
         getSubmitBtn.classList.add("changeCursor");
     }
+    if (getUsername.value === "" || getPassword.value === "") {
+        getSubmitBtn.style.opacity="0.5";
+        getSubmitBtn.classList.remove("changeCursor");
+    }
 });
-
-
 
 // getSubmitBtn.addEventListener("keydown",(e)=>{
 // // console.log(e.keyCode);

@@ -102,7 +102,7 @@ hr {
 }
 
 .replaceCursor {
-    cursor: auto;
+    cursor: copy;
 }
 
 .fa.fa-google,
