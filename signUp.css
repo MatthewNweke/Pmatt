@@ -1,4 +1,5 @@
 @import url("header.css");
+
 .contents-wrapper {
     position: relative;
 }
@@ -24,7 +25,7 @@ input {
     border: 1px solid #c2c8cc;
     background-color: #0E1525;
     caret-color: #c2c8cc;
-    color:white;
+    color: white;
 }
 
 input:hover {
@@ -48,13 +49,14 @@ input[type="submit"] {
 
 .user-assist {
     margin-top: 1rem;
-   
+    width: 25vw;
 }
 
 hr {
     color: #c2c8cc;
     width: 32%;
 }
+
 .continue-with {
     display: block;
     padding: 5px 10px;
@@ -77,29 +79,33 @@ hr {
     margin: 0;
     padding: 0;
 }
-.new{
+
+.new {
     color: #c2c8cc;
-    line-height: 1.7;
+    line-height: 2.2;
 }
-.new a{
+
+.new a {
     text-decoration: none;
-    color:#055fb9;
+    color: #055fb9;
 }
-.new a:hover{
-    color:rgb(87 171 255);
+
+.new a:hover {
+    color: rgb(87 171 255);
 }
-.changeCursor{
-cursor: pointer;
+
+.changeCursor {
+    cursor: pointer;
 }
 
 @media (max-width:1024px) {
-    input, .continue-with{
+    input, .continue-with {
         width: 35vw;
     }
 }
 
 @media (max-width:780px) {
-    input,.continue-with{
+    input, .continue-with {
         width: 45vw;
     }
 }
@@ -108,19 +114,23 @@ cursor: pointer;
     input {
         width: 80vw;
     }
-    .continue-with{
+
+    .continue-with {
         width: 80vw;
     }
-    #form-container h3{
+
+    #form-container h3 {
         font-size: 1.8rem;
     }
 }
-@media (max-width:200px){
-    .continue-with{
+
+@media (max-width:200px) {
+    .continue-with {
         padding: 4px 8px;
         font-size: 0.9rem;
     }
-    #form-container h3{
+
+    #form-container h3 {
         font-size: 1.6rem;
     }
 }
