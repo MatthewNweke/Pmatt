@@ -236,6 +236,19 @@ video {
 .team-text+img {
     width: 50vw;
     height: 65vh;
+    animation:go 10s 0s ease-in  infinite;
+    position: relative;
+
+}
+@keyframes go {
+    from{
+        transform: scaleX(-1);
+        /* bottom:5px; */
+    }
+    to{
+        /* top: 5px; */
+        transform: scaleX(1);
+    }
 }
 
 /* hosting section */
@@ -300,6 +313,11 @@ footer h4{
 }
 #languages ul li a:hover{
 color: #57abff;
+}
+.copyright{
+    text-align: center;
+    margin: 0;
+    margin-top: 4rem;
 }
 @media (max-width:1030px) {
     .each-skill-levels-item h3 {
