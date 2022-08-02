@@ -46,11 +46,11 @@ body {
     padding: 1rem 1rem 1rem;
     border-radius: 0.2rem;
     font-weight: 600;
-    animation: startcode 0.8s 0s cubic-bezier(.17, .67, .83, .67) alternate infinite;
-    transition: all 0.2s 0s ease-in;
+    /* animation: startcode 0.8s 0s cubic-bezier(.17, .67, .83, .67) alternate infinite;
+    transition: all 0.2s 0s ease-in; */
 }
 
-@keyframes startcode {
+/* @keyframes startcode {
     0% {
         padding: 1rem 1rem 1rem;
     }
@@ -64,7 +64,7 @@ body {
         padding: 1rem 2rem 1rem;
 
     }
-}
+} */
 
 .StartCoding:hover {
     background-color: rgb(87 171 255);
@@ -121,11 +121,11 @@ body {
     font-size: 1.6rem;
 }
 
-.each-skill-levels-item:hover {
+/* .each-skill-levels-item:hover {
     box-shadow: 0px 20px 70px #055fb9;
     transform: scale(1.1);
     transition: all 2s cubic-bezier(.165, .84, .44, 1);
-}
+} */
 
 .each-skill-levels-item p {
     color: #c2c8cc;
@@ -224,7 +224,6 @@ video {
     font-size: 2.7rem;
     color: white;
     text-shadow: 2px 2px 60px #0079f2;
-
 }
 
 .multiplayer-text a,
@@ -253,22 +252,22 @@ video {
 .team-text+img {
     width: 50vw;
     height: 65vh;
-    animation: go 10s 0s ease-in infinite;
+    /* animation: go 10s 0s ease-in infinite; */
     position: relative;
 
 }
 
-@keyframes go {
+/* @keyframes go {
     from {
         transform: scaleX(-1);
-        /* bottom:5px; */
+        bottom:5px;
     }
 
     to {
-        /* top: 5px; */
+        top: 5px;
         transform: scaleX(1);
     }
-}
+} */
 
 /* hosting section */
 .Host {
@@ -287,7 +286,7 @@ video {
     padding: 1rem 1rem 1rem;
     border-radius: 0.2rem;
     font-weight: 600;
-    animation: startcode 0.8s 0s cubic-bezier(.17, .67, .83, .67) alternate infinite;
+    /* animation: startcode 0.8s 0s cubic-bezier(.17, .67, .83, .67) alternate infinite; */
 }
 
 .coding-link:hover {
@@ -644,13 +643,13 @@ footer h4 {
 
 }
 
-@media (max-width:315px) {
-    .StartCoding, .coding-link {
+/* @media (max-width:315px) { */
+/* .StartCoding, .coding-link {
         animation: small 0.8s 0s cubic-bezier(.17, .67, .83, .67) alternate infinite;
         transition: all 0.2s 0s ease-in;
-    }
+    } */
 
-    @keyframes small {
+/* @keyframes small {
         0% {
             padding: 0.4rem;
         }
@@ -659,8 +658,8 @@ footer h4 {
             padding: 0.6rem;
 
         }
-    }
-}
+    } */
+/* } */
 
 
 @media (max-width:300px) {
@@ -675,7 +674,7 @@ footer h4 {
         padding: 0.3rem;
     }
 
-    .StartCoding, .coding-link {
+    /* .StartCoding, .coding-link {
         animation: small 0.8s 0s cubic-bezier(.17, .67, .83, .67) alternate infinite;
         transition: all 0.2s 0s ease-in;
     }
@@ -689,7 +688,7 @@ footer h4 {
             padding: 0.5rem;
 
         }
-    }
+    } */
 
 }
 
