@@ -101,8 +101,19 @@ hr {
     cursor: pointer;
 }
 
+.changeOpacity {
+    opacity: 1;
+}
+
 .replaceCursor {
     cursor: copy;
+}
+
+.gmaildetails {
+    font-weight: 800;
+    opacity: 1;
+    color: whitesmoke;
+    background-color: rgb(87 171 255);
 }
 
 .fa.fa-google,
@@ -162,9 +173,9 @@ hr {
     #form-container h3 {
         font-size: 1.6rem;
     }
+
     .fa.fa-google,
     .fa.fa-facebook, .fa.fa-github {
         display: none;
     }
 }
-

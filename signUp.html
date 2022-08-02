@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="signUp.css">
 </head>
+
 <body>
     <header>
 
@@ -43,20 +45,25 @@
     <div class="contents-wrapper">
         <div id="form-container">
             <h3>Sign Up</h3>
-             <form action="">
-              <input type="text" placeholder="Email or Username" autofocus id="email-username"> <br>
-              <input type="password" placeholder="Enter password" class="password"> <br>
-              <input type="password" placeholder="Confirm password" class="password" > <br>
-              <input type="submit"  id="sub" value="Sign Up">
-             </form> 
-             <!-- <div class="user-assist">
+            <form action="" autocomplete="on">
+                <input type="text" placeholder="Enter User Name" autofocus id="user-name" value="matt" required> <br>
+                <input type="email" placeholder="Email Address" autofocus id="email" value="ihfiif" required> <br>
+                <div class="reqirement">Password must be at least 8 characters,and
+                    must <br> start with a capital letter and it must contain <br>at least
+                    one of these special characters "@,%,$,&,"</div>
+                <input type="password" placeholder="Enter password" class="password" value="" required> <br>
+                <input type="password" placeholder="Confirm password" class="password" value="" required> <br>
+                <input type="submit" id="submit" value="Sign Up">
+            </form>
+            <!-- <div class="user-assist">
                 <span class="new">New to pmatt? <a href="">Sign up</a></span> <br>
                 <span class="new">Trouble logging in? <a href="">Get help</a></span> <br>
                 <span class="new"> <a href="">Forgot password?</a></span>
             </div> -->
         </div>
-        </div>
+    </div>
     <script src="header.js"></script>
     <script src="signUp.js"></script>
 </body>
+
 </html>

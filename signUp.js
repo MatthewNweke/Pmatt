@@ -1,15 +1,8 @@
-let getSubmitBtn = document.querySelector("#sub");
-let getUsername = document.querySelector("#email-username");
-let getPassword = document.querySelector(".password1");
-let password2 = document.querySelector("password2");
-
-getSubmitBtn.addEventListener("click", (e) => {
-    if (getUsername.value === "" || getPassword.value === "" || password2.value === "") {
+const emailAddress = document.querySelector("#email").value;
+const submitBtn = document.querySelector("#submit");
+// console.log(emailAddress.toLowercase());
+submitBtn.addEventListener("submit", (e) => {
+    if (!(emailAddress.endsWith("@gmail.com"))) {
         e.preventDefault();
     }
-});
-getSubmitBtn.addEventListener("mouseover", () => {
-    if (getUsername.value !== "" && getPassword.value !== "" && password2.value !== "") {
-        getSubmitBtn.classList.add("changeCursor");
-    }
-});
+})

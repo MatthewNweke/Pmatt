@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 </head>
+
 <body>
     <header>
 
@@ -41,30 +43,32 @@
     <div class="backdrop">
 
     </div>
-  <div class="contents-wrapper">
-    <div id="form-container">
-        <h3>Log in to your account</h3>
-         <form action="">
-          <input type="text" placeholder="Email or Username" autofocus id="email-username"> <br>
-          <input type="password" placeholder="Password" class="password1"> <br>
-          <input type="submit"  id="sub" value="Log in">
-         </form> 
-         <div class="user-assist">
-            <span class="new">New to pmatt? <a href="signUp.html">Sign up</a></span> <br>
-            <span class="new">Trouble logging in? <a href="">Get help</a></span> <br>
-            <span class="new"> <a href="">Forgot password?</a></span>
+    <div class="contents-wrapper">
+        <div id="form-container">
+            <h3>Log in to your account</h3>
+            <form action="">
+                <input type="email" placeholder="Email" autofocus id="email" required value=""> <br>
+                <input type="password" placeholder="Password" class="password1" required value=""> <br>
+                <input type="submit" id="sub" value="Log in" disabled>
+            </form>
+            <div class="user-assist">
+                <span class="new">New to pmatt? <a href="signUp.html">Sign up</a></span> <br>
+                <span class="new">Trouble logging in? <a href="">Get help</a></span> <br>
+                <span class="new"> <a href="">Forgot password?</a></span>
+            </div>
         </div>
+        <div class="signup-with">
+            <a href="" class="continue-with"><i class="fa fa-google" aria-hidden="true"></i> Continue with google</a>
+            <a href="" class="continue-with"><i class="fa fa-github" aria-hidden="true"></i> Continue with github</a>
+            <a href="" class="continue-with"><i class="fa fa-facebook" aria-hidden="true"></i> Continue with
+                facebook</a>
+        </div>
+        <span class="extra-info">By sig</span>
     </div>
-    <div class="signup-with">
-        <a href="" class="continue-with"><i class="fa fa-google" aria-hidden="true"></i> Continue with google</a>
-        <a href="" class="continue-with"><i class="fa fa-github" aria-hidden="true"></i> Continue with github</a>
-        <a href="" class="continue-with"><i class="fa fa-facebook" aria-hidden="true"></i> Continue with facebook</a>
-       </div> 
-       <span class="extra-info">By sig</span>
-  </div>
-  
+
     <script src="header.js"></script>
     <script src="login.js"></script>
 
 </body>
+
 </html>

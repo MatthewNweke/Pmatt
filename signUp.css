@@ -51,6 +51,7 @@ input[type="submit"] {
     color: #c2c8cc;
     font-weight: 600;
 }
+
 .continue-with {
     display: block;
     padding: 5px 10px;
@@ -66,20 +67,28 @@ input[type="submit"] {
     cursor: pointer;
 }
 
+.reqirement {
+    width: 25vw;
+    color: #c2c8cc;
+    background-color: transparent;
+    position: relative;
+    left: 0.5rem;
+}
+
 @media (max-width:1024px) {
-    input, .continue-with,.user-assist{
+    input, .continue-with, .user-assist, .reqirement {
         width: 35vw;
     }
 }
 
 @media (max-width:780px) {
-    input, .continue-with,.user-assist {
+    input, .continue-with, .user-assist, .reqirement {
         width: 45vw;
     }
 }
 
 @media (max-width:480px) {
-    input,.user-assist {
+    input, .user-assist, .reqirement {
         width: 80vw;
     }
 
