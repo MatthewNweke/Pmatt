@@ -46,11 +46,11 @@ body {
     padding: 1rem 1rem 1rem;
     border-radius: 0.2rem;
     font-weight: 600;
-    /* animation: startcode 0.8s 0s cubic-bezier(.17, .67, .83, .67) alternate infinite;
-    transition: all 0.2s 0s ease-in; */
+    animation: startcode 0.8s 0s cubic-bezier(.17, .67, .83, .67) alternate infinite;
+    transition: all 0.2s 0s ease-in;
 }
 
-/* @keyframes startcode {
+@keyframes startcode {
     0% {
         padding: 1rem 1rem 1rem;
     }
@@ -64,7 +64,7 @@ body {
         padding: 1rem 2rem 1rem;
 
     }
-} */
+}
 
 .StartCoding:hover {
     background-color: rgb(87 171 255);
@@ -121,11 +121,11 @@ body {
     font-size: 1.6rem;
 }
 
-/* .each-skill-levels-item:hover {
+.each-skill-levels-item:hover {
     box-shadow: 0px 20px 70px #055fb9;
     transform: scale(1.1);
     transition: all 2s cubic-bezier(.165, .84, .44, 1);
-} */
+}
 
 .each-skill-levels-item p {
     color: #c2c8cc;
@@ -260,7 +260,7 @@ video {
 /* @keyframes go {
     from {
         transform: scaleX(-1);
-        bottom:5px;
+        bottom: 5px;
     }
 
     to {
@@ -286,7 +286,7 @@ video {
     padding: 1rem 1rem 1rem;
     border-radius: 0.2rem;
     font-weight: 600;
-    /* animation: startcode 0.8s 0s cubic-bezier(.17, .67, .83, .67) alternate infinite; */
+    animation: startcode 0.8s 0s cubic-bezier(.17, .67, .83, .67) alternate infinite;
 }
 
 .coding-link:hover {
@@ -521,8 +521,12 @@ footer h4 {
 
     .top-contents {
         padding-top: 0;
-        line-height: 1.5;
+        line-height: 1.8;
         word-wrap: wrap;
+    }
+
+    .StartCoding {
+        /* margin-top: 1rem; */
     }
 }
 
@@ -534,6 +538,11 @@ footer h4 {
 
     .main-last-text p {
         font-size: 2rem;
+    }
+
+    .top-contents {
+        padding-top: 0;
+        line-height: 1.8;
     }
 }
 
@@ -592,6 +601,15 @@ footer h4 {
     .main-last-text p {
         font-size: 1.5rem;
     }
+
+    .top-contents {
+        padding-top: 0;
+        line-height: 2;
+    }
+
+    .first-text #top-info {
+        line-height: 0;
+    }
 }
 
 @media (max-width:400px) {
@@ -641,15 +659,20 @@ footer h4 {
         font-size: 2.2rem;
     }
 
+    .top-contents {
+        padding-top: 0;
+        line-height: 2.2;
+    }
+
 }
 
-/* @media (max-width:315px) { */
-/* .StartCoding, .coding-link {
+@media (max-width:315px) {
+    .StartCoding, .coding-link {
         animation: small 0.8s 0s cubic-bezier(.17, .67, .83, .67) alternate infinite;
         transition: all 0.2s 0s ease-in;
-    } */
+    }
 
-/* @keyframes small {
+    @keyframes small {
         0% {
             padding: 0.4rem;
         }
@@ -658,13 +681,24 @@ footer h4 {
             padding: 0.6rem;
 
         }
-    } */
-/* } */
+    }
+}
 
 
 @media (max-width:300px) {
     .each-skill-levels-item {
         padding-top: 3rem;
+    }
+
+    .top-contents {
+        padding-top: 0;
+        line-height: 2;
+    }
+}
+
+@media(max-width:236px) {
+    .top-contents {
+        line-height: 1.3;
     }
 }
 
@@ -674,7 +708,12 @@ footer h4 {
         padding: 0.3rem;
     }
 
-    /* .StartCoding, .coding-link {
+    .top-contents {
+        padding-top: 0;
+        line-height: 1.3;
+    }
+
+    .StartCoding, .coding-link {
         animation: small 0.8s 0s cubic-bezier(.17, .67, .83, .67) alternate infinite;
         transition: all 0.2s 0s ease-in;
     }
@@ -688,7 +727,7 @@ footer h4 {
             padding: 0.5rem;
 
         }
-    } */
+    }
 
 }
 
@@ -701,6 +740,11 @@ footer h4 {
         font-size: 0.5rem;
         padding: 0.3rem;
 
+    }
+
+    .top-contents {
+        padding-top: 0;
+        line-height: 1.2;
     }
 
     .multiplayer-heading {

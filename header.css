@@ -376,4 +376,8 @@ li {
         padding-top: 5rem;
         margin-bottom: 0;
     }
+
+    .main-nav-list {
+        top: 4rem;
+    }
 }
