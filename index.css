@@ -24,7 +24,7 @@ body {
 
 .top-contents {
     text-align: center;
-    height: 40vw;
+    /* height: 40vw; */
     min-height: 75vh;
     color: white;
 }
@@ -368,7 +368,12 @@ footer h4 {
     .each-skill-levels-item p {
         font-size: 0.7rem;
     }
+}
 
+@media (max-width:912px) {
+    /* .top-contents {
+        padding-top: 5rem;
+    } */
 }
 
 @media (max-width:871px) {
@@ -542,8 +547,9 @@ footer h4 {
 
     .top-contents {
         padding-top: 0;
-        line-height: 1.8;
+        min-height: 65vh;
     }
+
 }
 
 @media (max-width:482px) {
@@ -604,7 +610,8 @@ footer h4 {
 
     .top-contents {
         padding-top: 0;
-        line-height: 2;
+        line-height: 1.4;
+        min-height: 60vh;
     }
 
     .first-text #top-info {
@@ -661,7 +668,13 @@ footer h4 {
 
     .top-contents {
         padding-top: 0;
-        line-height: 2.2;
+        line-height: 1.4;
+    }
+
+    .about-codes-wrapper {
+        padding-left: 1rem;
+        margin-right: 1rem;
+        padding-right: 1rem;
     }
 
 }
@@ -692,7 +705,7 @@ footer h4 {
 
     .top-contents {
         padding-top: 0;
-        line-height: 2;
+        line-height: 1.5;
     }
 }
 
@@ -729,6 +742,10 @@ footer h4 {
         }
     }
 
+    .top-contents {
+        min-height: 75vh;
+    }
+
 }
 
 @media (max-width:166px) {
@@ -744,7 +761,7 @@ footer h4 {
 
     .top-contents {
         padding-top: 0;
-        line-height: 1.2;
+        line-height: 1.1;
     }
 
     .multiplayer-heading {
@@ -766,5 +783,9 @@ footer h4 {
 
     .main-last-text p {
         font-size: 1.2rem;
+    }
+
+    .top-contents {
+        max-height: 75vh;
     }
 }

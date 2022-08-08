@@ -97,7 +97,7 @@ hr {
     color: rgb(87 171 255);
 }
 
-.changeCursor {
+/* .changeCursor {
     cursor: pointer;
 }
 
@@ -107,13 +107,14 @@ hr {
 
 .replaceCursor {
     cursor: copy;
-}
+} */
 
-.gmaildetails {
+.Validateinfo {
     font-weight: 800;
     opacity: 1;
     color: whitesmoke;
     background-color: rgb(87 171 255);
+    cursor: pointer;
 }
 
 .fa.fa-google,

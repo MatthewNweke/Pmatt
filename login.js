@@ -1,62 +1,30 @@
-let getSubmitBtn = document.querySelector("#sub");
-let getEmail = document.querySelector("#email");
-let getPassword = document.querySelector(".password1");
-// let validEmail = "@email.com";
-// let validGmail = "gmail.com";
-// let validYahooMail = "@yahoomail.com";
-// let mails = [validEmail, validGmail, validYahooMail]
-// mails.forEach(() => {
+let getSubmitBtn = document.querySelector("#submit");
+let getEmail = document.querySelector("#email").value.trim();
+let getPassword = document.querySelector(".password1").value.trim();
+let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+// console.log(getEmail);
+// console.log(getPassword);
 
-// })
-// let validEmail=getEmail.endsWith("@email.com").toLowerCase();
-// let validGmail=getEmail.endsWith("@gmail.com").toLowerCase();
-// let validYahoo=getEmail.endsWith("@yahoomail.com").toLowerCase();
-
-getSubmitBtn.addEventListener("submit", (e) => {
-    if (getEmail.value.trim() === ""
-        || getPassword.value.trim() === ""
-        ||
-        (!(getEmail.value.endsWith("@gmail.com")))
-
-    ) {
-        // e.preventDefault();
-        getSubmitBtn.disabled = true;
+getSubmitBtn.addEventListener("click", () => {
+    if (getEmail.match(regexEmail)) {
+        console.log(true);
     }
-});
-getSubmitBtn.addEventListener("mouseover", () => {
-    if (getEmail.value.trim() !== "" && getPassword.value.trim() !== "") {
-        if (getEmail.value.endsWith("@gmail.com")) {
-            getSubmitBtn.style.opacity = "1";
-            getSubmitBtn.style.fontWeight = "800";
-            getSubmitBtn.style.color = "whitesmoke";
-            getSubmitBtn.classList.add("changeCursor");
-            getSubmitBtn.style.backgroundColor = "rgb(87 171 255)";
-            getSubmitBtn.disabled = false;
-        }
+    else {
+        console.log(false);
     }
-    if (getEmail.value.trim() === "" || getPassword.value.trim() === "") {
-        getSubmitBtn.style.opacity = "0.5";
-        getSubmitBtn.classList.remove("changeCursor");
-    }
-});
-// let mails = [validEmail, validGmail, validYahoo];
-// mails.forEach((n) => {
-//     if (n.endsWith("@gmail.com")
-//         || n.endsWith("@getEmail.com") ||
-//         n.endsWith("@yahoo,ail.com")) {
-//         console.log(getEmail.value);
+})
+// getSubmitBtn.addEventListener("click", (e) => {
+//     function validateMail() {
+//         if (getEmail.match(regexEmail)) {
+//             // e.preventDefault();
+//            console.log(true);
+//         }
+//         console.log(false);
 //     }
-//     else {
-//         // console.log(n);
-//     }
-// })
-// getEmail.addEventListener("input", () => {
-//     // getSubmitBtn.style.opacity = "1";
-//     // getSubmitBtn.style.color = "black"
-//     getSubmitBtn.style.backgroundColor = "rgb(87 171 255)"
-//     getSubmitBtn.classList.add("changeCursor");
+//     validateMail()
 // })
 
+// getSubmitBtn.addEventListener("submit", (e) => {
 // getSubmitBtn.addEventListener("keydown",(e)=>{
 // // console.log(e.keyCode);
 // if(e.keyCode===13){
